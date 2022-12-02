@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account </title>
+</head>
+<body>
+    <h1>Create Account</h1>
+<form action="Create Account" id="login" name="login" method="post" enctype="multipart/form-data" >
+<fieldset>
+    <legend>Registration information</legend>
+    First name*: <input type="text" name="First name">
+    Last name: <input type="text" name="Last name"/><br>
+    Email*: <input type="text" name="email">
+    Phone*: <input type="number" name="phone"/><br>
+    Password*: <input type="password" name="Password">
+    Confirm Password*: <input type="password" name="confirm password"/><br>
+</fieldset>
+<fieldset>
+    <legend>Personal information</legend>
+    Gender: <input type="radio" name="gender" value="male" checked>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="female">
+            <label for="female">Famale</label>
+    <strong>Hobbies: </strong> <input type="checkbox" name="hob1" value="Music" >
+            <label for="music">Music</label>
+            <input type="checkbox" name="hob2" value="Sports" >
+            <label for="Sports">Sports</label>
+            <input type="checkbox" name="hob3" value="Travel" >
+            <label for="Travel">Travel</label>
+            <input type="checkbox" name="hob4" value="Movies" >
+            <label for="Movies">Movies</label><br>
+    Source of Income: <select >
+                    <option value="Employed">Employed</option>
+                    <option value="Host">Host</option>
+                    </select>   
+    <strong>Income:</strong> <input type="range" min="1" max="5" step="1"/><br>   
+    Age: <input type="number" min="18" max="90"> 
+    <strong>Profile Picture:</strong>
+    <input type="file" multiple ><br>
+    Birthday: <input type="date" name="date" id="date">
+    <strong>Address:</strong> <input type="text"><br>
+    <label for="">Bio</label>
+    <textarea name="bio" id="Bio" cols="30" rows="2"></textarea> 
+</fieldset>
+<input type="Create" value="Create">
+<input type="reset" value="Reset" >
+</form>
+</body>
+</html>
